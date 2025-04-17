@@ -1,0 +1,157 @@
+.logo {
+    height: 20vh;
+}
+
+/* navbar ni height less karvanu bhulto nahi */
+
+/* fonts potani rite change karvanu bhbulto nahi */
+
+.navbar {
+    display: flex;
+    padding: 0px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    font-size: 18px;
+    gap: 25px;
+    color: #2c4d53;
+}
+
+.navbar-right {
+    gap: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right button {
+    background: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    color: #42828e;
+    padding: 10px 30px;
+    border: 1px solid rgb(61, 228, 125);
+    border-radius: 50px;
+    transition: 0.5s ease;
+}
+
+.navbar-right button:hover {
+    background-color: #e7e8ee;
+}
+
+.navbar-basket {
+    height: 27px;
+    position: relative;
+}
+
+.navbar-basket .dot {
+    position: absolute;
+    border-radius: 5px;
+    background-color: tomato;
+    min-width: 10px;
+    min-height: 10px;
+    top: -8px;
+    right: 0px;
+    /* about this i asked chatgpt why 0px still importance of right very nice explaination  */
+}
+
+.navbar-menu .active {
+    padding-bottom: 2px;
+    /* border-bottom: 2px solid #2c4d53; */
+    border-bottom: 2px solid #1b2f33;
+    color: #1b2f33;
+}
+
+.navbar-profile {
+    position: relative;
+}
+
+.nav-profile-dropdown {
+    position: absolute;
+    display: none;
+    right: 0;
+    z-index: 1;
+}
+
+.navbar-profile:hover .nav-profile-dropdown {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff2ef;
+    padding: 12px 25px;
+    border-radius: 4px;
+    border: 1px solid tomato;
+    outline: 2px solid white;
+    list-style: none;
+}
+
+.nav-profile-dropdown li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  
+  .nav-profile-dropdown img{
+    width: 20px;
+  }
+
+  .nav-profile-dropdown li:hover{
+    color: tomato;
+  }  
+
+@media (max-width: 1050px) {
+    .navbar .logo {
+        width: 140px;
+    }
+
+    .navbar-menu {
+        gap: 20px;
+        font-size: 17px;
+    }
+
+    .navbar-right {
+        gap: 30px;
+    }
+
+    .navbar-right img {
+        width: 22px;
+    }
+
+    .navbar-right button {
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar .logo {
+        width: 140px;
+    }
+
+    .navbar-menu {
+        gap: 15px;
+        font-size: 16px;
+    }
+
+    .navbar-right {
+        gap: 20px;
+    }
+
+    .navbar-right img {
+        width: 20px;
+    }
+
+    .navbar-right button {
+        padding: 7px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar-menu {
+        display: none;
+    }
+}

@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* copied from frontend index.css and some part comented */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+body{
+  min-height: 100vh;
+  background-color: #fcfcfc;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+hr{
+  border: none;
+  height: 1px;
+  background-color: #a9a9a9;
+}
+
+.app-content{
+  display: flex;
+}
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cursor{
+  cursor: pointer;
+}
